@@ -2,20 +2,17 @@ class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         int n = digits.size();
-        for(int i = n-1; i>=0; i--){
-            if(digits[i] != 9){
+        for(int i = n - 1; i >= 0; i--) {
+            if(digits[i] != 9) {
                 digits[i]++;
-                break;
+                return digits; // early return if no carry
             } else {
                 digits[i] = 0;
             }
-
-            if(digits[0] == 0){
-                vector<int> res(n + 1);
-                res[0] = 1;
-                return res;
-            }
         }
-        return digits;
+        // If all digits were 9, we get here
+        vector<int> res(n + 1, 0);
+        res[0] = 1;
+        return res;
     }
 };
