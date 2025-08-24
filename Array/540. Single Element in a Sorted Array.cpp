@@ -1,3 +1,5 @@
+// using binary search approach
+
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
