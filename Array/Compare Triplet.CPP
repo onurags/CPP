@@ -1,3 +1,4 @@
+//hackerrank
 vector<int> compareTriplets(vector<int> a, vector<int> b) {
     vector<int> ans;
     int al = 0; int bo = 0;
