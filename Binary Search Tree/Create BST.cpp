@@ -48,6 +48,6 @@ int main(){
         root = insertBST(root, arr[i]);
     }
 
-    // traversal of tree
+    // traversal
     inorder(root);
 }
